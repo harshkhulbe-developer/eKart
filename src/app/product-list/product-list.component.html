@@ -1,13 +1,3 @@
 <div class="ekart--product--container">
-    <img [src]="product.pImage" alt="iphone">
-    <p>Name: {{product.name}}</p>
-    <p>Price: {{'$'+product.price}}</p>
-    <p>Color : {{product.color}}</p>
-    <p>Discounted Price: {{getDiscountedPrice().toFixed(2)}}</p>
-    <p>{{product.inStock > 0 ? 'Only '+product.inStock+' items left' : 'Not in stock'}}</p>
-    <button (click)="deleteProduct()">-</button>
-    <span>{{addToCart}}</span>
-    <button (click)="addProduct()">+</button>
-    <!-- <input (input)="onNameChange($event)"><br>
-    <p>Name = {{name}}</p> -->
+    <app-search></app-search>
 </div>

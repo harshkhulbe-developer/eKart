@@ -21,10 +21,6 @@ export class ProductListComponent {
     return this.product.price - (this.product.price*this.product.discount/100);
   }
 
-  onNameChange(e:any) {
-    // this.name = e.target.value;
-  }
-
   deleteProduct() {
     if(this.addToCart > 0) {
       this.addToCart = this.addToCart - 1; 
@@ -33,7 +29,6 @@ export class ProductListComponent {
   }
 
   addProduct() {
-    console.log(this.product.inStock);
     if(this.product.inStock > 0){
       this.addToCart = this.addToCart + 1;
     }
