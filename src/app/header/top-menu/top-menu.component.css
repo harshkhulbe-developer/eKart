@@ -1,8 +1,10 @@
 .ekart--top--bar{
+    font-size:14px;
     width:auto;
     text-align: right;
     padding-top: 3px;
     padding-bottom: 15px;
     padding-right: 30px;
+    font-weight:900;
 }
 
